@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import ArtistDetails from './components/ArtistDetails'
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <SideBar />
         <Route path="/" component={ Main } /> 
         <Route path="/artist/:artistId/" component={ArtistDetails} />
+        <Footer />
       </Router>
     </div>
   );
